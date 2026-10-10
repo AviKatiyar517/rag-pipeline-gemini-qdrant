@@ -1,0 +1,9 @@
+A neural network is a computational model inspired by the human brain, consisting of layers of interconnected nodes called neurons. Each connection has an associated weight that is adjusted during training. The network takes input data, passes it through hidden layers, and produces an output. 
+
+The most basic type is the feedforward neural network, where data flows in one direction from input to output without loops. Each neuron applies an activation function, such as ReLU or sigmoid, to introduce non-linearity into the model. Without activation functions, a neural network would simply be a linear model regardless of depth.
+
+Training a neural network involves a process called backpropagation, combined with an optimization algorithm like gradient descent. During forward propagation, input data passes through the network to generate a prediction. The difference between this prediction and the actual value is calculated using a loss function. Backpropagation then calculates the gradient of the loss with respect to each weight, and these gradients are used to update the weights in a direction that reduces the loss.
+
+Convolutional Neural Networks (CNNs) are specialized for processing grid-like data such as images. They use convolutional layers that apply filters across the input to detect features like edges, textures, and shapes. Pooling layers reduce the spatial dimensions, making the network more computationally efficient and less prone to overfitting.
+
+Recurrent Neural Networks (RNNs) are designed for sequential data like text or time series. Unlike feedforward networks, RNNs have connections that loop back, allowing information to persist across time steps. However, traditional RNNs struggle with long-term dependencies due to the vanishing gradient problem. This led to the development of LSTM (Long Short-Term Memory) networks, which use gating mechanisms to control what information is remembered or forgotten.
